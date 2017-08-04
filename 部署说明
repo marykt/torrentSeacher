@@ -1,0 +1,18 @@
+程序分为两个部分。一部分是网页管理，另一部分是数据爬虫。
+django python runserver ...
+ubuntu :
+	建立一个定时任务
+	crontab -e
+	然后进行编辑
+	查看定时任务
+	crontab -l
+
+网页管理部分需要定时更新全文检索数据。
+所以需要定时执行python update_index 命令
+即python update_index --age=1//hour表示提取最近一个小时的数据更新
+所以定时执行python update_index --age=1
+爬虫部分需要运行　python main.py
+
+
+数据库采用mysql 数据库
+起码要有好大的内存
